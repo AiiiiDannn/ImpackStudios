@@ -1,0 +1,8 @@
+# Ignore Hugging Face model cache
+hf_cache/
+
+# Mac specific
+.DS_Store
+
+# VSCode specific
+.vscode/

@@ -1,0 +1,43 @@
+# requirements.txt
+#
+# Purpose: Manages all Python dependencies for the AI Studio project.
+# This file is read by the Dockerfile.
+# (As shown in your lecture videos, if you find a missing library,
+# pip install it in the terminal, then remember to add it here.)
+# -----------------------------------------------------------------
+
+# --- Core: Fine-Tuning (Eddie & Jacqueline) ---
+# Unsloth automatically installs the exact versions it needs of:
+# torch, transformers, bitsandbytes, peft, accelerate, trl
+unsloth[colab]
+
+# --- Interface: UI (Patrick) ---
+gradio
+
+# --- API: Gemini Agent (Mihika) ---
+google-generativeai
+openai
+tiktoken
+
+# --- Knowledge Base: RAG (Patrick & Mihika) ---
+langchain
+langchain-community
+llama-index
+sentence-transformers   # For embedding text into vectors
+faiss-cpu               # Efficient vector database (CPU version for Mac/PC compatibility)
+chromadb                # Another popular vector database
+pypdf                   # For RAG to read PDF files
+python-docx             # For RAG to read .docx files
+docx2txt
+markdownify             # Various document parsers needed by RAG
+
+# --- Data Science & Utilities (All) ---
+numpy
+pandas
+scipy
+scikit-learn
+tqdm                    # Progress bar
+matplotlib              # Plotting
+seaborn
+plotly
+python-dotenv           # For loading API keys from .env files

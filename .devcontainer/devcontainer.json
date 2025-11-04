@@ -1,0 +1,41 @@
+{
+    "name": "AI-Studio-Dev-Environment",
+    // Tell VS Code where our Dockerfile is
+    "dockerFile": "../Dockerfile",
+    "context": "..",
+
+    // This command runs after VS Code attaches
+    "postCreateCommand": "echo 'Container is up, VS Code is connected!'",
+
+    // Key: Automatically creates the "Host path" (Volume) from your lecture
+    // Mounts your local code directory into /workspace in the container
+    "workspaceMount": "source=${localWorkspaceFolder},target=/workspace,type=bind",
+    "workspaceFolder": "/workspace",
+
+    // Key: Mount an hf_cache folder as well
+    // This saves downloaded models to your host machine, surviving rebuilds
+    "mounts": [
+        "source=${localWorkspaceFolder}/hf_cache,target=/workspace/hf_cache,type=bind"
+    ],
+
+    // Key: Handle Mac (CPU) vs. PC (GPU)
+    "runArgs": [
+        // Eddie (PC/GPU user) should uncomment the line below
+        // "--gpus=all" 
+    ],
+
+    // Key: Automatically installs the VS Code extensions from your lecture
+    "customizations": {
+        "vscode": {
+            "settings": {
+                // Tell VS Code where to find python in the container
+                "python.defaultInterpreterPath": "/usr/bin/python"
+            },
+            "extensions": [
+                "ms-python.python",       // Python language support
+                "ms-toolsai.jupyter",     // Jupyter Notebook support
+                "ms-vscode-remote.remote-containers" // The Dev Containers plugin
+            ]
+        }
+    }
+}
