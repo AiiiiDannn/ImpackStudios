@@ -72,12 +72,12 @@ _(For the simpler, automatic setup, see the "Dev Containers" guide in the main R
 
       - (Optional) Add any API keys you need (e.g., `GOOGLE_API_KEY`).
 
-    - **For PC/GPU Users:** `To Eddie: I'm not sure if it is correct. Please check it on your PC with GPU available
-      - **For PC/GPU Users (Eddie):**
-        - In the "Run new container" window, scroll down and click the **"Advanced settings"** (or "Host config") dropdown.
-        - This will expand a new section, often with tabs. Click the **"Resources"** tab.
-        - Find the **"GPU"** section and enable **"GPU resource access"**.
-        - _(This adds the `--gpus all` flag and gives the container access to your PC's NVIDIA GPU for fine-tuning.)_
+    - **For PC/GPU Users:**
+      - `To Eddie: I'm not sure if it is correct. Please check it on your PC with GPU available`
+      - In the "Run new container" window, scroll down and click the **"Advanced settings"** (or "Host config") dropdown.
+      - This will expand a new section, often with tabs. Click the **"Resources"** tab.
+      - Find the **"GPU"** section and enable **"GPU resource access"**.
+      - _(This adds the `--gpus all` flag and gives the container access to your PC's NVIDIA GPU for fine-tuning.)_
 
 4.  **Start Container:** Click the final **"Run"** button to start your container.
 5.  After all these steps are completed, you can direct to the `Containers` tab, where a live container is running. Please check if its name matches what you entered in the settings before you `Run`.
