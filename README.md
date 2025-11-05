@@ -28,13 +28,16 @@ _(For the simpler, automatic setup, see the "Dev Containers" guide in the main R
     cd ImpackStudios
     ```
 
+    ‼️DO NOT CHANGE ANYTHING HERE, ESPECIALLY THE `Dockerfile`. `Dockerfile` is `Dockerfile`, not `Dockerfile.txt` or `Dockerfile.exe`, no extension.
+
 3.  **Build the Image:**
     - In your terminal (inside the `ImpackStudios` folder), run the build command.
-    - This command is the **same for both Mac and PC**.
+    - The following command is the **same for both Mac and PC**.
     ```bash
     docker build -t ai-studio .
     ```
-    - Wait for the build to complete. This may take several minutes. (For me, it was around 4 minutes)
+    - Wait for the build to complete. This may take several minutes. (For me, it was around 4 minutes).
+    - Docker is detecting the `Dockerfile`, following the `Dockerfile`'s instructions, which includes installing all packages listed in `requirements.txt`. If we need to modify the container's packages later (I don't want to), we can do so by editing `requirements.txt`.
 
 ### Step 2: Run the Container (from Docker Desktop)
 
