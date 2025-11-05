@@ -24,7 +24,7 @@ _(For the simpler, automatic setup, see the "Dev Containers" guide in the main R
     ‼️Just to remember that the `Dockerfile`, `requirements.txt`, and `.devcontainer` folder should be placed at the root (the top-level) of your cloned project folder (ImpackStudios), not inside any sub-folder.
 
     ```bash
-    git clone [https://github.com/AiiiiDannn/ImpackStudios.git](https://github.com/AiiiiDannn/ImpackStudios.git)
+    git clone https://github.com/jacqun11/Apples-and-Oranges.git
     cd ImpackStudios
     ```
 
