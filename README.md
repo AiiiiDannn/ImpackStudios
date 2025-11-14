@@ -352,3 +352,5 @@ You may use this prompt, which I asked ChatGPT to provide with me. I think it wi
 > The program runs year-round, provides laptops and materials at no cost, and pairs each student with a trained mentor who supports both academic growth and emotional well-being. Alumni return to become new mentors, creating a self-sustaining cycle of empowerment.
 > The center is designed to be inclusive for learners of all ages and abilities, and all curriculum materials are open-source so that other communities can replicate the model.
 > Evaluate whether this initiative uplifts humanity, provide a score from 0 to 1, explain benefits and risks, and give a concise recommendation for scaling.
+
+**The code above can be found at `ImpackStudios/FineTuneLLM/UseOurFTllm.ipynb`**
