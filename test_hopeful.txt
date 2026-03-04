@@ -1,0 +1,4 @@
+A coalition of teachers, engineers, and local volunteers launches a free community learning center that offers open-access STEM workshops, AI literacy classes, and mentorship for students from underserved backgrounds.
+The program runs year-round, provides laptops and materials at no cost, and pairs each student with a trained mentor who supports both academic growth and emotional well-being. Alumni return to become new mentors, creating a self-sustaining cycle of empowerment.
+The center is designed to be inclusive for learners of all ages and abilities, and all curriculum materials are open-source so that other communities can replicate the model.
+Evaluate whether this initiative uplifts humanity, provide a score from 0 to 1, explain benefits and risks, and give a concise recommendation for scaling.
